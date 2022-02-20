@@ -1,0 +1,189 @@
+body {
+  	font-family: 'Playfair Display', serif;
+  	font-size: 20px;
+  	font-weight: 300;
+  	overflow-x: hidden;
+    background-color: #FFF8DC;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    position: relative;
+    clear: both;
+}
+
+h2 {
+  text-align: center;
+  color:maroon;
+}
+h5 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  clear: both;
+}
+p {
+  text-align: right;
+}
+.image1 {
+  float: right;
+  width: 70%;
+  clear: both;
+}
+.radio {
+  padding: 40px;
+  text-align: center;
+}
+.section1 { margin-bottom: 60px; }
+.ul {
+  margin-right: 5px;
+  margin-bottom: -4px;
+}
+.p {
+  text-align: center;
+}
+.books {
+  text-align: center;
+}
+.form {
+  margin: 10px;
+}
+.info {
+font-family: 'Noto Serif', serif;
+}
+
+.button {
+  background-color: maroon;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font size: 30px;
+}
+
+.submit {
+  background-color: #5C4033;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font size: 10px;
+}
+
+.navbar {
+  list-style-type: none;
+  padding: 0;
+  font-family: 'Noto Serif', serif;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.navbar-brand {
+  font-weight: 1000;
+}
+.carousel {
+  display: block;
+  margin: 0 auto;
+  width: 1600px;
+  height: auto;
+}
+
+.section1 {
+  clear: both;
+}
+.tm-nav-item-link.active {
+	color: #f4ef5e;
+}
+.reg {
+  margin: 5px;
+}
+.product {
+  margin-bottom: 30px;
+}
+.image img {
+   height: 300px;
+   object-fit: cover;
+   border-radius: 7px;
+}
+.image {
+  margin-bottom: 10px;
+}
+.info h6 {
+  font-size: 21px;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+.rating {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.rating li {
+  display: inline-block;
+  color: #ffc107;
+}
+.info-price {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+}
+.add-cart {
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8bc34a;
+  color: #fff;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.price {
+  font-weight: 700;
+  font-size: 18px;
+}
+.ml11 {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: maroon;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 {
+  top: 0;
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}

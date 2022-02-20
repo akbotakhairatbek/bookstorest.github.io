@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <base href="TurnThePage.kz"/>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>TurnThePage</title>
+  <link rel="shortcut icon" href="img/books-icon.png">
+  <link rel="apple-touch-icon" href="img/books-icon.png">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-#FFF8DC">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">TurnThePage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="books.html">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="auth.html">Sign in</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Enter the name of the book" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</head>
+<body>
+
+<h1 style= "font-family: 'Playfair Display', serif;"><strong>Catalogue</strong></h1>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="img/fi.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>The Lincoln Highway</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">7 850 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="img/1984.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>1984</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">1 320 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/51D2TDHK9GL.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>Green Mile</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star">
+</ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">2 870 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="img/th.jpeg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>The New Jim Crow</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">4 000 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="img/hamlet.jpeg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>Hamlet</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">5 940 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="img/milk.jpeg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>Milk and Honey</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">3 860 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://2books.su/assets/img/covers/gone-with-the-wind-margaret-mitchell.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>Gone with the Wind</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">5 250 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://listread.com/photo/books/longdesc/19105-velikiy_getsbi.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>The Great Gatsby</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">1 420 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://cv8.litres.ru/pub/c/pdf-kniga/cover_max1500/11981782-author-dikkens_charlz-kniga_oliver_tvist_kniga_dlya_chteniya_na_angl.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>Oliver Twist</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">2 290 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/71Q1tPupKjL.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>Pride and Prejudice</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">4 220 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320492158l/125432.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>The Night in Lisbon</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+              <li><ion-icon name="star-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">2 740 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://almabooks.com/wp-content/uploads/2016/10/9781847494238.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>The Little Prince</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">1 960 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://images.penguinrandomhouse.com/cover/9780451528353" alt="" width="200" height="300">
+          <div class="info">
+            <h6>The Prince and the Pauper</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">2 870 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://www.unitheque.com/Intermediaire3/CouvertureT/H/9781474607254-color-purple_g.webp?extension=jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>The Color Purple</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">6 580 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://kbimages1-a.akamaihd.net/58132135-dc2a-4cbf-bb55-bb77833e9d1e/1200/1200/False/the-iron-heel-40.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>﻿The Iron Heel</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+              <li><ion-icon name="star-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">5 110 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/71RGAtb418L.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>Demian</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">7 790 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://images.squarespace-cdn.com/content/v1/5d40204073334a0001f2f066/1602439836717-GUAAN9EXNKDOGD9SKKZM/3674767a84174c9df69d8706e755e37a.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>Wuthering Heights</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">4 110 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://m.media-amazon.com/images/I/41qiZpKBDvL.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>Things We Never Got Over</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">7 790 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://images.penguinrandomhouse.com/cover/9780593191484" alt="" width="200" height="300">
+          <div class="info">
+            <h6>From Strength to Strength</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+              <li><ion-icon name="star-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">8 760 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://m.media-amazon.com/images/I/817vqET828L.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>It Ends with Us: A Novel</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">6 320 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/61NdJMwAThS.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>The Body Keeps the Score</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">5 550 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/811Hq4sgpSL.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>Crying in H Mart: A Memoir</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">6 830 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/81VjO-Tk8kL.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>The Sentence</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">7 300 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/81J9dKYx8wL.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>Sankofa: A Novel</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">6 780 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/61WfqH2B72L.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>A Heartbreaking Work of Staggering Genius</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">10 540 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/91EWBiFTnGL.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>The Secret History</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">4 220 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/81dVKg6ZepL.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>The Wind-Up Bird Chronicle: A Novel </h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half-outline"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">4 745 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product">
+        <div class="image">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/911TS-hr50L.jpg" alt="" width="200" height="300">
+          <div class="info">
+            <h6>The Diary of a Young Girl</h6>
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+            </ul>
+            <div class="info-price">
+              <span class="price">6 780 KZT</span>
+              <button type="button" name="button" class="add-cart" onclick="play();"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

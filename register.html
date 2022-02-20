@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <base href="TurnThePage.kz"/>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>TurnThePage</title>
+  <link rel="shortcut icon" href="img/books-icon.png">
+  <link rel="apple-touch-icon" href="img/books-icon.png">
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+height: 100%;
+margin: 0;
+font-family: 'Playfair Display', serif;
+}
+
+* {
+box-sizing: border-box;
+}
+
+.bg-image {
+background-image: url("http://greenvillejournal.com/wp-content/uploads/2021/12/stack-of-books-in-home-interior-picture-id532852345.jpg");
+filter: blur(5px);
+-webkit-filter: blur(5px);
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.bg-text {
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0, 0.4);
+color: white;
+border: 3px solid #f1f1f1;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 2;
+width: 80%;
+padding: 20px;
+text-align: center;
+}
+.button {
+height: 100%;
+border-radius: 35px;
+font-weight: bold;
+display: inline-block;
+vertical-align: top;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">TurnThePage</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="books.html">Books</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="auth.html">Sign in</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+         <section id="login">
+           <h2 style="color: white"><strong>Register</strong></h2>
+           <form class="" method="post">
+                             <div class="books">
+                                 <label for="name">Name</label>
+                                 <input name="name" type="text" class="reg" placeholder="name" required onkeypress="return ValidateAlpha(event);"><br>
+                                 <label for="surname">Surname</label>
+                                 <input name="surname" type="text" class="reg" placeholder="Surname" required onkeypress="return ValidateAlpha(event);"><br>
+                                 <label for="phone">Phone number</label>
+                                 <input name="phone" type="text" class="reg" placeholder="Phone number" data-inputmask="'mask': '+7 (999) 999-99-99'" required onkeypress="return isNumberKey(event)"><br>
+                                 <label for="">Email</label>
+                                 <input name="email" type="email" class="reg" placeholder="Email" required><br>
+                                 <label for="Male">Choose your gender  <input id="Male" type="radio" name="Male" value="Male">Male</label>
+                                 <label for="Male"><input id="Male" type="radio" name="Male" value="Male">Female</label><br>
+                                 <label for="age">Choose your age  <input id="age" type="radio" name="age" value="age">0-18</label>
+                                 <label for="age"><input id="Male" type="radio" name="age" value="age">19-25</label>
+                                 <label for="age"><input id="age" type="radio" name="age" value="age">26-40</label>
+                                 <label for="age"><input id="age" type="radio" name="age" value="age">41+</label><br>
+                                 <label for="password">Password</label>
+                                 <input name="password1" type="password" class="reg" minlength="8" placeholder="password" required><br>
+                                 <label for="confirm">Confirm password</label>
+                                 <input name="password2" type="password" class="reg" minlength="8" placeholder="confirm password" required><br>
+                                 <input type="submit" class="button" value="Register" onclick="goHome()"/>
+                                 <div class="">
+                                     <a href="auth.html">You already have an account? Log in</a>
+                                 </div>
+                             </div>
+                         </form>
+         </section>
+         <script src="index.js"></script>
+  </body>
+</html>
